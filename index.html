@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="css/juego.css">
+    <title>Juego</title>
+</head>
+<body>
+    <div id="contenedor">
+        <div>
+            <div>
+                <div class="Moneda">
+                    <div id="moneda" class="moneda animate">
+                        <div id="monedacara" class="monedacara"></div>
+                        <div id="monedasello" class="monedasello"></div>
+                  </div>
+                </div>
+                <div class="moneda_container">
+                    <div class="titulo_moneda" id="titulo_general">
+                        <h1><i class="fa-solid fa-coins"></i> Cara y Sello</h1>
+                    </div>
+                    <div class="container_body">
+                        <div>
+                            <h3 id="resultado"><i class='fa-solid fa-square-poll-vertical'></i> El resultado fue: </h3>
+                            <h3 id="dinero"><i class='fa-solid fa-money-bill'></i> Dinero que tiene: </h3>
+                        </div>
+                        <div id="play" >   
+                            <div>
+                                <h4 id="ganadas"><i class="fa-solid fa-check"></i> Ganados = 0</h4>
+                            </div>
+                            <div>
+                                <h4 id="perdidas"><i class="fa-solid fa-x"></i> Perdida = 0</h4>
+                            </div>
+                            <div>
+                                <h4 id="partidas"><i class="fa-brands fa-bitcoin"></i> Partidas = 0</h4>
+                            </div>
+                        </div> 
+                        <div id="labe">
+                            <label for="btn"><i class="fa-solid fa-credit-card"></i>  Ingrese el dinero a apostar:</label>
+                            <input type="text" id="Apuestas" placeholder="Ingrese el dinero a apostar">
+                        </div>
+                        <br>
+                        <div class="btn-grup">
+                            <label for="btn">Elija el lado de la moneda:</label>
+                            <br>
+                            <button type="submit" id="cara">Cara</button>
+                            <button type="submit" id="sello">Sello</button>
+                        </div>
+                        <br>
+                        <div id="termina">
+                            <button id="Finalizar">Finalizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>      
+  </div>  
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2"></script>
+    <script src="https://kit.fontawesome.com/83c411d32a.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
